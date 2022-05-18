@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kollabkro</title>
+    <link rel="stylesheet" href="css/editmentor.css">
+    <script src="https://kit.fontawesome.com/54e932ab36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header2'); -%>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+        <div class="left" >
+            <img src="userimages/<%= mentor.image %> " alt="user image">
+        </div>
+        <div class="right">
+            <form action="" method="post" enctype="multipart/form-data">
+                <br>
+                <div class="changeimg">
+                    <label for="img">
+                        <i class="fa-solid fa-camera"></i>
+                        Change Profile Photo
+                        <input id="img" type="file" name="image">
+                    </label>
+                </div>
+                <input type="hidden" name="user_id" value="<%= mentor._id %>">
+                <input type="text" name="name" value="<%= mentor.name %>" placeholder="name"><br>
+                <input type="text" name="email" value="<%= mentor.email %>" placeholder="Enter email"><br>
+                <input type="hidden" name="password" value="<%= mentor.password %> ">
+                <input type="text" name="Designation" value="<%= mentor.Designation%>" placeholder="Enter your designation"><br>
+                
+                <input type="text" name="Expert_field" value="<%= mentor.Expert_field %>" placeholder="current year">
+                <br>
+                <input type="number" name="Experience" value="<%= mentor.Experience %>" placeholder="Experience">
+                <br>
+                <br> 
+                <label for="social_id">Social handels to connect:<br>
+                    <input type="url" name="social_id" value="<%= mentor.social_id %> "
+                        placeholder="social handle to connect with others">
+                </label>
+                <br>
+                <a href="#"><button class="save" style="float:right;">save</button></a>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

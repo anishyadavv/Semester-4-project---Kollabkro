@@ -1,0 +1,87 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-image:linear-gradient(to bottom, #fffeff, #c6cdec) ;
+    /* height: 100vh; */
+    /* overflow-y: hidden; */
+  }
+
+ .aboutpage{
+     margin-top: 150px;
+     padding-left: 100px;
+     padding-right: 100px;
+     /* padding: 500px; */
+     text-align: center;
+ }
+
+ .aboutpage .head{
+     margin-top: 200px;
+     font-size: 3.1rem;
+     font-weight: 400;
+ }
+
+ .aboutpage .p{
+     margin-top: 50px;
+     /* padding-left: 50px; */
+     margin-left: 50px;
+ }
+
+ .container {
+    text-align: center;
+    background: #c6cdec;
+}
+
+.header {
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container {
+    max-width: 95%;
+    /* margin: auto; */
+    margin-top: 80px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.teams {
+    margin: 5px;
+    padding: 10px;
+    max-width: 20%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.teams:hover {
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.teams img {
+    width: 200px;
+    height: 250px;
+    object-fit:fill;
+}
+
+.name {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}

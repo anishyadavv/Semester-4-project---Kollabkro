@@ -1,0 +1,90 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-image:linear-gradient(to bottom, #fffeff, #c6cdec) ;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+*{
+  box-sizing: border-box;
+}
+.left{
+  float: left;
+  width: 50%;
+}  
+.right{
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+}
+.right1{
+    float: left;
+    width: 50%;
+    margin: auto;
+}
+.left img{
+  width: 70%;
+}
+input{
+  margin-bottom: 10px;
+}
+input[type=text]{
+  width: 70%;
+}
+.changeimg{
+  border-radius: 50px;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 50px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+}
+.changeimg:hover{
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+input[type=password]{
+    width: 70%;
+}
+input[type=submit]{
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  background: transparent;
+  border: 2px solid black;
+}
+
+input[type=submit]:hover{
+  background-color: rgb(175, 178, 219);
+  text-decoration: none;
+}
+.changeimg input{
+  display: none;
+}
+label{
+  cursor: pointer;
+}
+ 
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.already button{
+  background-color: transparent;
+  border: 0px;
+  margin-left: 25%;
+}

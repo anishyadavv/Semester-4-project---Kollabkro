@@ -1,0 +1,103 @@
+/* .crow{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+} */
+
+.profile{
+    border: 1px solid #dce6f1;
+    border-radius: 7px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+    background-color: #dce6f1;
+}
+.card button{
+  border-radius: 50px;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 50px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 16px;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  float: right;
+  margin: -70px 70px 0px 0px;
+}
+.card button:hover{
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+.upperofcard{
+    margin-bottom: 150px;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left:50px;
+    margin-top: -100px;
+    border: 7px solid white;
+}
+.card{
+    background-color: white;
+    margin: 10px;
+    border-radius: 7px;
+    padding-bottom: 50px;
+}
+.card h3{
+    font-size: 35px;
+   margin-left: 70px;
+   margin-top: -2px;
+}
+.card p{
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: -20px;
+    color: #737373;
+}
+.details{
+    border: 1px solid #dce6f1;
+    border-radius: 7px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    background-color: #dce6f1;
+}
+.bio{
+    background-color: white;
+    margin: 10px;
+    border-radius: 7px;
+    padding-bottom: 5px;
+    overflow: auto;
+}
+.bio p{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.bio h4{
+    margin-left: 10px;
+}
+.bio span{
+    color: #737373;
+}
+.biodata{
+    float: left;
+    width: 40%;
+}
+.biodata p {
+    margin-left: 70px;
+}
+.data{
+    float: right;
+    width: 40%;
+}

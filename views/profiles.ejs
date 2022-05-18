@@ -1,0 +1,68 @@
+<% if(typeof profiles!=='undefined' ){%>
+    <div class="profiles">
+
+        <% for(let i=0; i<profiles.length ;i++){ %>
+
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="userimages/<%=profiles[i].image%>" alt="Profile image">
+                </div>
+
+                <p class="name">
+                    <%= profiles[i].name %>
+                </p>
+                <p>
+                    <%= profiles[i].skill1 %>
+                        <%= profiles[i].skill2 %>
+                </p>
+
+                <div class="socials">
+                    <a href="/viewprofile?id=<%=profiles[i]._id%>"><button class="viewprofile">View profile</button><a
+                            href="/viewprofile?id=<%=profiles[i]._id%>"></a><br>
+                        <a href="<%= profiles[i].social_id%>" target="_blank"><button class="viewprofile">
+                                Connect</button></a>
+                        <!-- <button class="pinterest"><i class="fab fa-pinterest-p"></i></button> -->
+                </div>
+            </div>
+
+
+            <% } %>
+
+    </div>
+    <%}else{%>
+        <div class="profiles">
+
+            <% for(let i=0; i<mentorprofiles.length ;i++){ %>
+
+
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="userimages/<%=mentorprofiles[i].image%>" alt="Profile image">
+                    </div>
+
+                    <p class="name">
+                        <%= mentorprofiles[i].name %>
+                    </p>
+                    <p>
+                        <%= mentorprofiles[i].skill1 %>
+                            <%= mentorprofiles[i].skill2 %>
+                    </p>
+
+                    <div class="socials">
+                        <a href="/viewprofile?id=<%=mentorprofiles[i]._id%>"><button class="viewprofile">View
+                                profile</button><a href="/viewprofile?id=<%=mentorprofiles[i]._id%>"></a><br>
+                            <a href="<%= mentorprofiles[i].social_id%>" target="_blank"><button class="viewprofile">
+                                    Connect</button></a>
+                            <!-- <button class="pinterest"><i class="fab fa-pinterest-p"></i></button> -->
+                    </div>
+                </div>
+
+
+                <% } %>
+
+        </div>
+
+        <%}%>

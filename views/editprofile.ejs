@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kollabkro</title>
+    <link rel="stylesheet" href="css/editprofile.css">
+    <script src="https://kit.fontawesome.com/54e932ab36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header2'); -%>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+        <div class="left">
+            <img src="userimages/<%= User.image %> " alt="user image">
+        </div>
+        <div class="right">
+            <form action="" method="post" enctype="multipart/form-data">
+                <br>
+                <div class="changeimg">
+                    <label for="img">
+                        <i class="fa-solid fa-camera"></i>
+                        Change Profile Photo  
+                    <input id="img" type="file" name="image">
+                    </label>
+                </div>
+                    <input type="hidden" name="user_id" value="<%= User._id %>">
+                    <input type="text" name="name" value="<%= User.name %>" placeholder="name"><br>
+                    <input type="text" name="email" value="<%= User.email %>" placeholder="Enter email"><br>
+                    <input type="hidden" name="password" value="<%= User.password %> ">
+                    <input type="text" name="branch" value="<%= User.branch%>" placeholder="Enter your branch"><br>
+                    <input type="number" name="year" value="<%= User.year %>" placeholder="current year">
+                    <br>
+                
+                <label for="skills">Enter your skills <br>
+
+                    <input type="text" id="skills" name="skill1" value="<%= User.skill1%>" placeholder="enter 1st skill"><br>
+                    <input type="text" id="skills" name="skill2" value="<%= User.skill2%>" placeholder="enter 2nd skill"><br>
+
+                </label><br>
+                <label for="lookingfor">skills looking for in partner <br>
+                    <input type="text" id="lookingfor" value="<%= User.skillrequired1%>" name="skillrequired1"
+                        placeholder="Enter skill required "><br>
+                    <input type="text" id="lookingfor" value="<%= User.skillrequired2%>" name="skillrequired2"
+                        placeholder="Enter skill required ">
+
+                </label>
+                <label for="social_id">Social handels to connect: 
+                     <input type="url" name="social_id" value="<%= User.social_id %> "
+                        placeholder="social handle to connect with others">
+                </label>
+                <a href="#"><button class="save" style="float:right;">save</button></a>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

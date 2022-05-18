@@ -1,0 +1,43 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-image:linear-gradient(to bottom, #fffeff, #c6cdec) ;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+.left{
+    float: left;
+    width: 50%;
+}
+.left img{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.right{
+    margin-top: 150px;
+    float: left;
+    width: 50%;
+}
+.right button{
+    height: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    background: transparent;
+}
+.right .buttn{
+    border: 2px solid black;
+    width: 70%;
+}
+.right a:hover{
+    text-decoration: none;
+}
+.right button:hover{
+    background-color: rgb(175, 178, 219);
+    text-decoration: none;
+}
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

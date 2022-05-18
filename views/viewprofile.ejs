@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kollabkro</title>
+    <link rel="stylesheet" href="css/viewprofile.css">
+    <script src="https://kit.fontawesome.com/54e932ab36.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header2'); -%>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <div class="profile">
+
+        <div class="upperofcard">
+
+        </div>
+          <% if( typeof profile!=='undefined' ) {%> 
+        <div class="card">
+            <img src="userimages/<%= profile.image %>" alt="Profile Picture">
+            <h3>
+                <%= profile.name %>
+            </h3>
+            <br>
+            <p>Student</p>
+     
+            <!-- <button>Connect</button>-->
+            <a href="<%= profile.social_id%>" target="_blank"><button class="viewprofile">Connect</button></a>
+           
+        </div>
+    </div>
+    <div class="details">
+        <div class="bio">
+            <div class="biodata">
+                <p> <b>year</b> :<%=profile.year %>
+                </p>
+                <p><b> Branch</b> - <%= profile.branch %>
+                </p>
+            </div>
+
+            <div class="data">
+                <!-- <p><i class="fa-solid fa-graduation-cap"></i> <span>Studing at</span> Chandigarh University</p> -->
+                
+                <p><b> Skills</b> - <%=profile.skill1 %> , <%= profile.skill2 %>
+                </p>
+                <p><b>Skills required</b>
+                    <%=profile.skillrequired1 %> , <%= profile.skillrequired2 %>
+                </p>
+            </div>
+        </div>
+    </div>
+    <% }else{ %> 
+        <div class="card">
+            <img src="userimages/<%= mentor.image %>" alt="Profile Picture">
+            <h3>
+                <%= mentor.name %>
+            </h3>
+            <br>
+            <p>Mentor</p>
+            <a href="<%= mentor.social_id%>" target="_blank"><button class="viewprofile">Connect</button></a>
+            <!-- <button>Connect</button>-->
+           
+        </div>
+    </div>
+    <div class="details">
+        <div class="bio">
+            <div class="biodata">
+                <p> <b>Designation</b> :<%=mentor.Designation%>
+                </p>
+                <p><b> Expert Field :</b> - <%= mentor.Expert_field %></p>
+            </div>
+
+            <div class="data">
+                
+                
+                <p><b> Experience:</b> - <%=mentor.Experience %> 
+                </p>
+                
+            </div>
+        </div>
+
+    </div>
+    <% } %> 
+</body>

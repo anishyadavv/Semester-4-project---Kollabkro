@@ -1,0 +1,70 @@
+<div class="user">
+    <% if( typeof User!=='undefined' ) {%>
+        <div class="ds-top">
+
+            <div class="user-image">
+
+                <img src="userimages/<%=User.image %> " alt="Profile image" id="usimg">
+            </div>
+            <div class="main">
+
+                <p class="name">
+                    <%=User.name %>
+                </p>
+                <p style="text-decoration: underline;">Student </p>
+            </div>
+        </div>
+
+
+        <div class="details">
+
+            <div class="branch">branch: <%= User.branch %>
+            </div>
+
+            <div class="year">year: <%= User.year %>
+            </div>
+
+            <div class="skills">skills: <%= User.skill1%>,<%= User.skill2%>
+            </div>
+            <div class="lookingforskills">skills required: <%= User.skillrequired1 %>, <%= User.skillrequired2%>
+            </div>
+
+
+        </div>
+
+
+
+        <a href="/editprofile?id=<%=User._id%> "><button class="edit">Edit profile</button></a>
+
+        <% }else{ %>
+            <div class="ds-top">
+                <div class="user-image">
+
+                    <img src="userimages/<%=mentor.image %> " alt="Profile image" id="usimg">
+                </div>
+                <div class="main">
+
+                    <p class="name">
+                        <%=mentor.name %>
+                    </p>
+                    <p style="text-decoration: underline;">Mentor</p>
+                </div>
+            </div>
+
+            <div class="details">
+
+                <div class="branch">Designation:<%= mentor.Designation%>
+                </div>
+
+                <div class="year">Field:<%= mentor.Expert_field %>
+                </div>
+
+                <div class="experience">Experience:<%= mentor.Experience %>
+                </div>
+
+            </div>
+
+            <a href="/editprofile?id=<%=mentor._id%> "><button class="edit">Edit profile</button></a>
+            <% } %>
+
+</div>

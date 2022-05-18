@@ -1,0 +1,61 @@
+<%- include('partials/header'); -%>
+  <!doctype html>
+  <html lang="en">
+
+  <head>
+    <title>Make your profile</title>
+    <link rel="stylesheet" href="css/mentorsignup.css">
+    <script src="https://kit.fontawesome.com/54e932ab36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <br><br><br>
+    <br><br>
+
+    <div class="content">
+
+      <div class="left">
+        <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+      </div>
+
+      <div class="right">
+        <h3>Make your profile</h3>
+        <form action="/mentorsignup" id="studentform" method="post" enctype="multipart/form-data">
+          <div class="left">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+            <input type="text" name="email" class="form-control" id="email" placeholder="E-mail">
+            <input type="password" name="password" class="form-control" id="email" placeholder="enter password">
+            <div class="changeimg">
+              <label for="img">
+                <i class="fa-solid fa-camera"></i>
+                Upload Profile Photo
+                <input type="file" name="image" class="form-control" id="img" placeholder="upload image">
+              </label>
+            </div>
+          </div>
+          
+          <div class="right1">
+            <input type="text" name="Designation" class="form-control" id="password" placeholder="enter designation">
+            <input type="text" name="Expert_field" class="form-control" id="email" placeholder="Expertise field">
+            <input type="text" name="Experience" class="form-control" id="password" placeholder="enter Experience">
+            <label for="social_id">Social handel to connect with others
+              <input type="url" name="social_id" class="form-control" id="password"
+                placeholder="Scial handles">
+            </label>
+          </div>
+          
+          <input type="submit" value="Sign-Up" class="btn btn-block buttn" style="width: 85%;">
+
+
+        </form>
+
+        <div class="already">
+          <a href="/login"><button>Already have an account? <strong> Login</strong></button></a>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+
+  </html>

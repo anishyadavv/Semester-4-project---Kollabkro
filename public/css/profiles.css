@@ -1,0 +1,94 @@
+
+.profiles{
+    background-color: #dce6f1;
+    width: 55%;
+    display:grid;
+   position:absolute;
+   left:340px;
+   top:100px;
+   /* z-index: 2000; */
+  
+    margin-left:0px;
+    border-radius:7px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.profiles .card{
+    border-radius: 20px;
+}
+
+.card{
+    background-color: white;
+     width:240px;
+     height:300px;
+    margin:19px 0px 0px 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: auto;
+    overflow: hidden;
+    /* position:relative; */
+    
+    /* left:5px; */
+    /* bottom:100px; */
+    /* transform: translate(-50%, -50%); */
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    /* margin-bottom: 12px; */
+    text-align: center;
+}
+
+.name {
+    margin-top: 10px;
+    
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    /* margin-bottom: 8px; */
+}
+
+.socials {
+    display: flex;
+    flex-direction:row;
+    margin-top:40px;
+    /* align-items: center; */
+    justify-content:space-between;
+
+}
+
+.viewprofile {
+  border-radius: 50px;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 50px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  margin: 5px;
+}
+.viewprofile:hover{
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
